@@ -20,4 +20,5 @@ Captain Webhook runs your scripts when it receives a webhook.
 Features
 --------
 
-* TODO
+* Runs an HTTP server and executes a given command when a pre-selected URL is requested.
+* Nothing else.
