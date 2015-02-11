@@ -41,7 +41,7 @@ setup(
     zip_safe=False,
     entry_points = {
         'console_scripts': ['cptwebhook=captainwebhook.captainwebhook:main'],
-    }
+    },
     keywords='captainwebhook',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
