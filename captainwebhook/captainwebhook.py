@@ -73,10 +73,10 @@ def main():
     try:
         server = HTTPServer((args.interface, args.port), get_handler(args.key, args.command))
     except:
-        print "Could not start server, invalid interface or port specified."
+        print("Could not start server, invalid interface or port specified.")
         sys.exit(1)
 
-    print "Starting server...\nTrigger URL: http://%s:%s%s%s/\nCommand: %s" % (args.interface, args.port, URL_PREFIX, args.key, args.command)
+    print("Starting server...\nTrigger URL: http://%s:%s%s%s/\nCommand: %s" % (args.interface, args.port, URL_PREFIX, args.key, args.command))
     try:
         server.serve_forever()
     except:
