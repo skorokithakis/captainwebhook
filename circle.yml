@@ -1,7 +1,15 @@
+machine:
+  python:
+    version: 2.7.8
+
 dependencies:
-    pre:
+  pre:
         - ln -s ~/.pyenv/versions/3.3.2/bin/python3.3 ~/bin
         - ln -s ~/.pyenv/versions/3.4.1/bin/python3.4 ~/bin
         - ln -s ~/.pyenv/versions/pypy-2.4.0/bin/pypy ~/bin
-    override:
-        - pip install tox
+  override:
+    - pip install tox
+
+test:
+  override:
+    - env PATH="$HOME/bin:$PATH" tox
