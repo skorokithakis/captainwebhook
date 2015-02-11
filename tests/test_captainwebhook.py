@@ -10,19 +10,14 @@ Tests for `captainwebhook` module.
 
 import unittest
 
-from captainwebhook import captainwebhook
+from captainwebhook.captainwebhook import get_handler, BaseHTTPRequestHandler
 
 
 class TestCaptainwebhook(unittest.TestCase):
 
-    def setUp(self):
-        pass
-
     def test_something(self):
-        pass
-
-    def tearDown(self):
-        pass
+        PullHandler = get_handler("some key", "echo hi")
+        self.assertTrue(issubclass(PullHandler, BaseHTTPRequestHandler))
 
 if __name__ == '__main__':
     unittest.main()

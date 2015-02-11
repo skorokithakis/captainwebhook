@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import argparse
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+try:
+    from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+except ImportError:
+    from http.server import BaseHTTPRequestHandler, HTTPServer
 import subprocess
 import sys
 import threading
@@ -43,9 +46,9 @@ def get_handler(key, command):
                 self.end_headers()
 
                 if PullHandler.pull_in_progress:
-                    self.wfile.write('{"status": "Another pull is already in progress."}')
+                    self.wfile.write(b'{"status": "Another pull is already in progress."}')
                 else:
-                    self.wfile.write('{"status": "ok"}')
+                    self.wfile.write(b'{"status": "ok"}')
                     t = threading.Thread(target=self._pull)
                     t.daemon = True
                     t.start()
