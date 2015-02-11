@@ -15,7 +15,7 @@ Captain Webhook
 Captain Webhook runs your scripts when it receives a webhook.
 
 * Free software: BSD license
-* Documentation: https://captainwebhook.readthedocs.org.
+* Documentation: https://captain-webhook.readthedocs.org.
 
 Features
 --------
