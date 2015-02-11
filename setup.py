@@ -39,7 +39,7 @@ setup(
     install_requires=requirements,
     license="BSD",
     zip_safe=False,
-    entry_points = {
+    entry_points={
         'console_scripts': ['cptwebhook=captainwebhook.captainwebhook:main'],
     },
     keywords='captainwebhook',
@@ -49,7 +49,6 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
