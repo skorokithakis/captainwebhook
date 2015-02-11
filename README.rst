@@ -8,6 +8,9 @@ Captain Webhook
 .. image:: https://travis-ci.org/skorokithakis/captainwebhook.png?branch=master
         :target: https://travis-ci.org/skorokithakis/captainwebhook
 
+.. image:: https://circleci.com/gh/skorokithakis/captainwebhook/tree/master.svg?style=svg
+        :target: https://circleci.com/gh/skorokithakis/captainwebhook/tree/master
+
 .. image:: https://pypip.in/d/captainwebhook/badge.svg
         :target: https://pypi.python.org/pypi/captainwebhook
 

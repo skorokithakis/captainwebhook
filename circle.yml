@@ -1,0 +1,5 @@
+dependencies:
+    pre:
+        - ln -s ~/.pyenv/versions/3.3.2/bin/python3.3 ~/bin
+        - ln -s ~/.pyenv/versions/3.4.1/bin/python3.4 ~/bin
+        - ln -s ~/.pyenv/versions/pypy-2.4.0/bin/pypy ~/bin
