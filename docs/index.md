@@ -14,7 +14,7 @@ pip install captainwebhook
 
 You can also get the latest source at the canonical location of Captain Webhook, its GitHub repository:
 
-https://github.com/skorokithakis/captainwebhook
+[https://github.com/skorokithakis/captainwebhook](https://github.com/skorokithakis/captainwebhook)
 
 
 ## How to use
