@@ -2,9 +2,6 @@
 Captain Webhook
 ===============================
 
-.. image:: https://badge.fury.io/py/captainwebhook.png
-    :target: http://badge.fury.io/py/captainwebhook
-
 .. image:: https://travis-ci.org/skorokithakis/captainwebhook.png?branch=master
         :target: https://travis-ci.org/skorokithakis/captainwebhook
 
