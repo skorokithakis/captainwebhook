@@ -4,6 +4,19 @@ Captain Webhook is a very simple Python script that will run an HTTP server and 
 is requested. It is mainly used for deployments, for example triggering ansible-pull whenever a commit is pushed to
 GitHub.
 
+## Installing
+
+You can install Captain Webhook using `pip`:
+
+```
+pip install captainwebhook
+```
+
+You can also get the latest source at the canonical location of Captain Webhook, its GitHub repository:
+
+https://github.com/skorokithakis/captainwebhook
+
+
 ## How to use
 
 Using Captain Webhook is very simple. Just launch it with the command you want to run:
@@ -17,6 +30,7 @@ And visit the URL in your browser:
 [http://localhost:48743/webhook/changeme/](http://localhost:48743/webhook/changeme/)
 
 The command you specified will be run.
+
 
 ## "Advanced" options
 
@@ -36,6 +50,7 @@ Other options include the interface and port the server will listen on. You can 
 ```
 cptwebhook -h
 ```
+
 
 ## Miscellaneous
 
