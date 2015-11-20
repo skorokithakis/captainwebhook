@@ -39,7 +39,7 @@ def get_handler(args):
 
         def _exec(self, parameters):
             CommandHandler.exec_in_progress = True
-            if args.format:
+            if args.template:
                 try:
                     subprocess.call(args.command.format(**parameters), shell=True)
                 except KeyError:
@@ -83,7 +83,7 @@ def main():
     parser = argparse.ArgumentParser(description='Run a command when a webhook is triggered.')
     parser.add_argument('command', help='the command to run when the URL is requested')
     parser.add_argument('-k', '--key', default="changeme", help='the secret key that will trigger the command')
-    parser.add_argument('-f', '--format', action="store_true", help='whether to use template formatting based on the query string parameters')
+    parser.add_argument('-t', '--template', action="store_true", help='whether to use template formatting based on the query string parameters')
     parser.add_argument('-p', '--port', type=int, default=48743, help='the port to listen on')
     parser.add_argument('-i', '--interface', default="0.0.0.0", help='the interface to listen on')
 

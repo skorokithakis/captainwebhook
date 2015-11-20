@@ -54,10 +54,10 @@ The URL now becomes:
 
 Your command doesn't have to be static! Captain Webhook can accept template
 variables in the command string and populate them with whatever comes in the
-query string of the request by passing the `--format` flag. For example:
+query string of the request by passing the `--template` flag. For example:
 
 ```
-cptwebhook -f "echo Hello, {name}!"
+cptwebhook -t "echo Hello, {name}!"
 ```
 
 Try the URL:
