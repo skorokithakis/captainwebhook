@@ -34,6 +34,11 @@ The command you specified will be run.
 
 ## "Advanced" options
 
+Captain Webhook supports some super-advanced functionality that is detailed
+below.
+
+### Password protection
+
 Obviously, the URL above isn't very secure, since anyone could trigger the command then. To make things a bit more
 obscure, and thus secure, Captain Webhook allows you to specify a key:
 
@@ -44,6 +49,24 @@ cptwebhook -k ichoKie5IeGhiexa "echo hello!"
 The URL now becomes:
 
 [http://localhost:48743/webhook/ichoKie5IeGhiexa/](http://localhost:48743/webhook/ichoKie5IeGhiexa/)
+
+### Command templates
+
+Your command doesn't have to be static! Captain Webhook can accept template
+variables in the command string and populate them with whatever comes in the
+query string of the request by passing the `--format` flag. For example:
+
+```
+cptwebhook -f "echo Hello, {name}!"
+```
+
+Try the URL:
+
+[http://localhost:48743/webhook/changeme/?name=world](http://localhost:48743/webhook/changeme/?name=world)
+
+will execute "echo Hello, world!". Isn't that the best thing ever?
+
+### Miscellanea
 
 Other options include the interface and port the server will listen on. You can see more details with:
 

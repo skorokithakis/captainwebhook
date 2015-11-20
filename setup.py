@@ -7,6 +7,8 @@ try:
 except ImportError:
     from distutils.core import setup
 
+from captainwebhook import __version__
+
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -24,7 +26,7 @@ test_requirements = [
 
 setup(
     name='captainwebhook',
-    version='0.1.0',
+    version=__version__,
     description="Captain Webhook runs your scripts when it receives a webhook.",
     long_description=readme + '\n\n' + history,
     author="Stavros Korokithakis",
